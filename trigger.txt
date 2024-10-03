@@ -1,4 +1,5 @@
 gristlabs/grist registry.cn-hangzhou.aliyuncs.com/outer_fast/grist
 redmine registry.cn-hangzhou.aliyuncs.com/outer_fast/redmine
 mysql:8.0 registry.cn-hangzhou.aliyuncs.com/outer_fast/mysql:8.0
+mysql:5.7 registry.cn-hangzhou.aliyuncs.com/outer_fast/mysql:5.7
 
