@@ -7,7 +7,7 @@ git diff ${last_commit}:${CHECK_FILE} HEAD:${CHECK_FILE}|grep '^+'|grep -v '^++'
 lines=$(cat trigger.txt)
 for line in $lines
 do
-        line=${line:1}
+        # line=${line:1}
         SOURCE_REPO_NAME=$line
         BASE_REPO_NAME=`echo $SOURCE_REPO_NAME|awk -F'/' '{print $2}'`
         BASE_REPO_NAME=${BASE_REPO_NAME:=$SOURCE_REPO_NAME}
