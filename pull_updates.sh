@@ -1,9 +1,8 @@
 #!/bin/bash
 BASE_URL=registry.cn-hangzhou.aliyuncs.com/outer_fast/
 CHECK_FILE=${1:-trigger.txt}
-git status
-git show --raw
-lines=$(git diff `git show --raw | grep '^:.*'${CHECK_FILE}'$'|awk '{print $3, $4}'`|grep '^+'|grep -v '^++'|awk '{print $1}')
+git diff HEAD^:${CHECK_FILE} HEAD:${CHECK_FILE}
+lines=$(git diff HEAD^:${CHECK_FILE} HEAD:${CHECK_FILE}|grep '^+'|grep -v '^++'|awk '{print $1}')
 for line in $lines
 do
         line=${line:1}
