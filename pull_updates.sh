@@ -2,7 +2,7 @@
 BASE_URL=registry.cn-hangzhou.aliyuncs.com/outer_fast/
 CHECK_FILE=${1:-trigger.txt}
 echo git diff HEAD~:${CHECK_FILE} HEAD:${CHECK_FILE}
-git diff HEAD^:${CHECK_FILE} HEAD:${CHECK_FILE}
+git diff HEAD~:${CHECK_FILE} HEAD:${CHECK_FILE}
 lines=$(git diff HEAD^:${CHECK_FILE} HEAD:${CHECK_FILE}|grep '^+'|grep -v '^++'|awk '{print $1}')
 for line in $lines
 do
