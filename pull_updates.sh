@@ -3,7 +3,6 @@ BASE_URL=registry.cn-hangzhou.aliyuncs.com/outer_fast/
 CHECK_FILE=${1:-trigger.txt}
 git log --oneline
 last_commit=$(git log --oneline|head -n 2|tail -n 1|awk '{print $1}')
-echo $last_commit
 
 lines=$(git diff ${last_commit}:${CHECK_FILE} HEAD:${CHECK_FILE}|grep '^+'|grep -v '^++'|awk '{print $1}')
 for line in $lines
