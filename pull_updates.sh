@@ -1,6 +1,7 @@
 #!/bin/bash
 BASE_URL=registry.cn-hangzhou.aliyuncs.com/outer_fast/
 CHECK_FILE=${1:-trigger.txt}
+git show --raw | grep '^:.*'${CHECK_FILE}'$'|awk '{print $3, $4}'
 lines=$(git diff `git show --raw | grep '^:.*'${CHECK_FILE}'$'|awk '{print $3, $4}'`|grep '^+'|grep -v '^++'|awk '{print $1}')
 for line in $lines
 do
