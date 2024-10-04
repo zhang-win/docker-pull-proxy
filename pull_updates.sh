@@ -1,10 +1,10 @@
 #!/bin/bash
 BASE_URL=registry.cn-hangzhou.aliyuncs.com/outer_fast/
 CHECK_FILE=${1:-trigger.txt}
-git log --oneline
 last_commit=$(git log --oneline|head -n 2|tail -n 1|awk '{print $1}')
+git diff ${last_commit}:${CHECK_FILE} HEAD:${CHECK_FILE}|grep '^+'|grep -v '^++'|awk '{print $1}'
 
-lines=$(git diff ${last_commit}:${CHECK_FILE} HEAD:${CHECK_FILE}|grep '^+'|grep -v '^++'|awk '{print $1}')
+lines=$(cat trigger.txt)
 for line in $lines
 do
         line=${line:1}
