@@ -4,3 +4,5 @@ mysql:8.0 registry.cn-hangzhou.aliyuncs.com/outer_fast/mysql:8.0
 mysql:5.7 registry.cn-hangzhou.aliyuncs.com/outer_fast/mysql:5.7
 neosmemo/memos:0.21.0 registry.cn-hangzhou.aliyuncs.com/outer_fast/memos:latest
 neosmemo/memos:0.18.1 registry.cn-hangzhou.aliyuncs.com/outer_fast/memos:stable
+neosmemo/memos:0.17.1 registry.cn-hangzhou.aliyuncs.com/outer_fast/memos:0.17.1
+neosmemo/memos:0.11.0 registry.cn-hangzhou.aliyuncs.com/outer_fast/memos:0.11.0
