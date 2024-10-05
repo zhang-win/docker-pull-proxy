@@ -12,3 +12,4 @@ adobe/s3mock
 fynnfluegge/rocketnotes-api
 fynnfluegge/rocketnotes-webapp
 ollama/ollama
+sigoden/dufs
