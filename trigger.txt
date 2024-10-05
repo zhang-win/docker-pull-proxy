@@ -15,3 +15,4 @@ ollama/ollama
 sigoden/dufs
 public.ecr.aws/sam/build-provided.al2:latest
 ghcr.io/hacdias/webdav
+wiznote/wizserver
