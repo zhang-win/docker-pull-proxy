@@ -9,8 +9,7 @@ for line in $lines
 do
         # line=${line:1}
         SOURCE_REPO_NAME=$line
-        BASE_REPO_NAME=`echo $SOURCE_REPO_NAME|awk -F'/' '{print $2}'`
-        BASE_REPO_NAME=${BASE_REPO_NAME:=$SOURCE_REPO_NAME}
+        BASE_REPO_NAME=`basename $SOURCE_REPO_NAME`
         echo "$SOURCE_REPO_NAME to $BASE_URL$BASE_REPO_NAME"
         docker pull $SOURCE_REPO_NAME
         docker tag $SOURCE_REPO_NAME $BASE_URL$BASE_REPO_NAME
