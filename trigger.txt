@@ -4,3 +4,4 @@ mattermost/focalboard
 hectorqin/reader
 containrrr/watchtower
 koreader/kosync
+lscr.io/linuxserver/calibre-web:latest
