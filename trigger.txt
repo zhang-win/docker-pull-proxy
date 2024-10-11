@@ -3,3 +3,4 @@ ghcr.io/hacdias/webdav
 mattermost/focalboard
 hectorqin/reader
 containrrr/watchtower
+koreader/kosync
