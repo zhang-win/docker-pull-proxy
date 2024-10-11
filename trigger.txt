@@ -5,3 +5,5 @@ hectorqin/reader
 containrrr/watchtower
 koreader/kosync
 lscr.io/linuxserver/calibre-web:latest
+ghcr.io/cxfksword/douban-api-rs
+talebook/talebook
