@@ -10,3 +10,4 @@ talebook/talebook
 xiaoyaliu/alist:hostmode
 xiaoyaliu/alist:latest
 mongodb/mongodb-community-server
+ubuntu:plucky
