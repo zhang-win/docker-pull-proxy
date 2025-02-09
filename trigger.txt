@@ -7,8 +7,6 @@ koreader/kosync
 lscr.io/linuxserver/calibre-web:latest
 ghcr.io/cxfksword/douban-api-rs
 talebook/talebook
-xiaoyaliu/alist:hostmode
-xiaoyaliu/alist:latest
 mongodb/mongodb-community-server
 ubuntu:plucky
 xhofe/alist:latest-aio
