@@ -11,3 +11,4 @@ mongodb/mongodb-community-server
 ubuntu:plucky
 xhofe/alist:latest-aio
 xjxjin/alist-sync:1.1.2
+yidadaa/chatgpt-next-web
